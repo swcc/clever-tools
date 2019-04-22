@@ -1,1 +1,3 @@
+#!/usr/bin/env bash
+
 docker build --build-arg CLEVER_TOOLS_VERSION=$DOCKER_TAG -f $DOCKERFILE_PATH -t $IMAGE_NAME .
