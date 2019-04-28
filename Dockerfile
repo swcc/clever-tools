@@ -6,7 +6,7 @@ RUN mkdir -p ~/.local/bin
 RUN tar -xvf clever-tools.tar.gz --strip-components=1 -C /usr/bin
 
 RUN apt update && \
-    apt install -y ssh
+    apt install -y ssh make git
 
 WORKDIR /app
 CMD ["clever"]
